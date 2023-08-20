@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.navbar-logo a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    padding: 0 15px;
+}
+
+
+.navbar-links a {
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+}
+
+/* Aggiungiamo un reset dei margini e del padding per tutti gli elementi all'interno della navbar-links */
+.navbar-links * {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        /* Aggiungiamo questa riga per eliminare lo spazio tra gli elementi */
+        gap: 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+/* PULSANTE TOP*/
+
+.content {
+    padding: 0px;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.arrow-up {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+}
+
+/* Aggiungiamo lo stile per il pulsante quando è visibile */
+.scroll-top-btn.show {
+    display: block;
+}
+
+/* MAIN PAGE*/
+.grid-container {
+    width: 100%;
+    display: flex;
+    height: 45em;
+  }
+  /* DIV 1 */
+  .div1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+  }
+/*
+  #btn-about{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 1.2em;
+    border: none;
+    background-color: #C0D6DF;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor:pointer;
+
+  }
+  */
+.div1 > h1{
+    font-size: 2em;
+    font-family: 'League Spartan', sans-serif;
+}
+  #name{
+    font-size: 1.5em;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.text-container p{
+    font-size: 1.15em;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#graphic{
+    color: #4A6FA5;
+}
+
+.icon-cont{
+    display: flex;
+    gap: 20px;
+}
+
+.icon{
+    transition: transform 0.5s;
+}
+
+.icon:hover{
+    transform: scale(1.50);
+    padding: px;
+}
+
+.container-icon{
+    width: 100%;
+}
+  /* DIV 2*/
+  .div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .div2 > img{
+    width: 40%;
+  }
+
+  #logo {
+    width: 55%;
+    height: auto;
+    filter: drop-shadow(0 0 0.50rem white);
+    transform: translateX(0px);
+    animation: float 5s ease-out infinite;
+    object-fit: contain;
+    
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ABOUT ME */
+
+
+.about-me{
+    width: 100%;
+    height: auto;
+}
+#abouttxt{
+    width: 100%;
+}
+
+#abouttxt > h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+.about-cont{
+    height: 300px;
+    display: flex;
+    padding: 50px;
+    gap: 3em;
+    justify-content: center;
+}
+
+.about-card{
+    width: 20%;
+}
+
+#profile-img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.about-txt{
+    width: 45%;
+    text-align: center;
+}
+
+.about-txt > p{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-txt > p{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* SKILLS */
+
+.skills{
+    width: 100%;
+    height: auto;
+
+}
+
+.skills > h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+.skils-cont{
+    margin-top: 4em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+
+.skill-c{
+    width: 500px;
+    height: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 1s;
+}
+
+.skill-c:hover{
+    transform: scale(1.05);
+}
+
+.photoshop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.photoshop-txt{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-right: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#photoshop{
+    width: 5em;
+}
+
+.illustrator{
+    margin-left: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#illustrator-txt{
+    width: 100%;
+    height: auto;
+    text-align: center ;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-right: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#illustrator{
+    width: 3.2em;
+}
+
+.ux-ui{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#ux-ui{
+    width: 5.5em;
+}
+
+#ux-ui-txt{
+    width: 100%;
+    height: auto;
+    text-align: center ;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-right: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.after-effects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#after-effects{
+    width: 3.3em;
+    margin: 10px;
+}
+
+#after-effects-txt{
+    width: 100%;
+    height: auto;
+    text-align: center ;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-right: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* SERVICES */
+
+#services-txt{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+.card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 7px;
+    transition: transform 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h1{
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+}
+
+.price h3{
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+.features h6{
+    text-align: start;
+    margin-left: 2em;
+    font-size: 0.85em;
+    font-family: 'Montserrat', sans-serif;
+}
+.features i{
+    margin-right: 30px;
+}
+
+.button{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 2em;
+}
+
+.get-started-button {
+    margin-top: 2em;
+    background-color: #2c3e50; /* Colore di sfondo blu scuro */
+    color: #ffffff; /* Colore del testo bianco */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4.5em;
+    cursor: pointer;
+  }
+
+  #button-df{
+margin-top: 10.50em;
+}
+
+#button-df2{
+    margin-top: 4.50em;
+}
+
+#button-df3{
+    margin-top: 7.5em;
+}
+
+
+/* FOOTER */
+
+footer > p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+}
+
+/* RESPONSIVE */
+
+/* PHONE */
+@media screen and (max-width: 767px){
+    /* MAIN PAGE */
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+      }
+      .div1{
+        width: 100%;
+        height: auto;
+      }
+      .div2{
+        width: 100%;
+        height: auto;
+      }
+   #logo{
+    margin-top: 5em;
+    z-index: -1;
+   }   
+   /* ABOUT ME */
+    #profile-img{
+        display: none;
+    }
+    .about-cont{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .about-txt{
+        width: 2000px;
+        height: auto;
+        text-align: inherit;
+    }
+
+    .about-txt > p {
+        font-size: 20px;
+
+    }
+    #abouttxt{
+        padding-top: 5em;
+    }
+
+  .scroll-top-btn{
+        margin-right: 20px;
+    }
+} 
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-me{
+        padding-bottom: 10em;
+        margin-top: -20em;
+    }
+    .about-card{
+        display: none;
+    }
+    .about-txt > p{
+        -right: 20em;
+    }
+    .grid-container{
+        margin: 50px;
+    }
+    .navbar-logo > a{
+        margin-left: 50px;
+    }
+    .div1, .div2{
+        margin-top: -20em;
+    }
+}
+
+/* POPUP SELECTION */
+.popup {
+    margin-top: -20px;
+    background-color: #1e235c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
