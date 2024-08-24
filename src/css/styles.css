@@ -638,11 +638,11 @@ footer > p{
     }
 
     .scroll-top-btn {
-        background-color: #555;
+        background-color: #fff;
     }
 
     .arrow-up {
-        border-color: #fff;
+        border-color: #000;
     }
 
     @media screen and (max-width: 768px) {
@@ -660,13 +660,14 @@ footer > p{
     padding: 0px;
 }
 
-.scroll-top-btn {
-    background-color: #ffffff;
-    color: #000000;
+
+
+.color-icon{
+    color: #fff;
 }
 
-.arrow-up {
-    border: solid rgb(0, 0, 0);
+.cv-button{
+    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
 }
 
 .skill-c {
@@ -677,15 +678,7 @@ footer > p{
     color: white;
 }
 
-.color-icon{
-    color: #fff;
-}
-
 .card{
-    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
-}
-
-.cv-button{
     box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
 }
 
