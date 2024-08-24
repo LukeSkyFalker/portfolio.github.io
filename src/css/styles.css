@@ -651,6 +651,10 @@ footer > p{
     }
 }
 
+.color-icon{
+    color: #fff;
+}
+
 /* PULSANTE TOP */
 .content {
     padding: 0px;
