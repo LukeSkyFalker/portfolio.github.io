@@ -43,8 +43,6 @@ body {
     text-decoration: none;
 }
 
-
-
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -95,7 +93,6 @@ body {
 
 
 /* PULSANTE TOP*/
-
 .content {
     padding: 0px;
 }
@@ -106,7 +103,7 @@ body {
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -198,7 +195,8 @@ body {
 .container-icon{
     width: 100%;
 }
-  /* DIV 2*/
+
+/* DIV 2*/
   .div2{
     display: flex;
     justify-content: center;
@@ -207,18 +205,17 @@ body {
 
   }
 
-  .div2 > img{
+.div2 > img{
     width: 40%;
-  }
+}
 
-  #logo {
+#logo {
     width: 55%;
     height: auto;
     filter: drop-shadow(0 0 0.50rem white);
     transform: translateX(0px);
     animation: float 5s ease-out infinite;
     object-fit: contain;
-    
 }
 
 @keyframes float {
@@ -233,9 +230,12 @@ body {
     }
 }
 
+/* COLORE ICONE */
+.color-icon{
+    color:#000000
+}
+
 /* ABOUT ME */
-
-
 .about-me{
     width: 100%;
     height: auto;
@@ -268,7 +268,6 @@ body {
     border-radius: 50%;
 }
 
-
 .about-txt{
     width: 45%;
     text-align: center;
@@ -286,6 +285,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* CV */
+.cv-button {
+    background-color: #2c3e50; /* Colore di sfondo blu scuro */
+    color: #ffffff; /* Colore del testo bianco */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4.5em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0) 0px 3px 6px, rgba(0, 0, 0) 0px 3px 6px;
+}
 
 /* SKILLS */
 
@@ -458,7 +468,6 @@ body {
  font-family: 'Montserrat', sans-serif;
 }
 
-
 .features h6{
     text-align: start;
     margin-left: 2em;
@@ -478,17 +487,6 @@ body {
     margin-top: 2em;
 }
 
-.cv-button {
-    background-color: #2c3e50; /* Colore di sfondo blu scuro */
-    color: #ffffff; /* Colore del testo bianco */
-    font-size: 16px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 4.5em;
-    cursor: pointer;
-  }
-
-
 .get-started-button {
     margin-top: 2em;
     background-color: #2c3e50; /* Colore di sfondo blu scuro */
@@ -500,8 +498,8 @@ body {
     cursor: pointer;
   }
 
-  #button-df{
-margin-top: 10.50em;
+#button-df{
+    margin-top: 10.50em;
 }
 
 #button-df2{
@@ -612,4 +610,83 @@ footer > p{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0) 0px 3px 6px, rgba(0, 0, 0) 0px 3px 6px;
+}
+
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .navbar {
+        color: #ffffff;
+    }
+
+    .navbar-logo a {
+        color: #ffffff;
+    }
+
+    .navbar-links a {
+        color: #ffffff;
+    }
+
+    .line {
+        background-color: #ffffff;
+    }
+
+    .scroll-top-btn {
+        background-color: #555;
+    }
+
+    .arrow-up {
+        border-color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+    .navbar-links {
+        background-color: #000;
+    }
+}
+
+/* PULSANTE TOP */
+.content {
+    padding: 0px;
+}
+
+.scroll-top-btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.arrow-up {
+    border: solid rgb(0, 0, 0);
+}
+
+.skill-c {
+    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
+}
+
+.form button {
+    color: white;
+}
+
+.color-icon{
+    color: #fff;
+}
+
+.card{
+    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
+}
+
+.cv-button{
+    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
+}
+
+.popup{
+    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
+}
+
 }

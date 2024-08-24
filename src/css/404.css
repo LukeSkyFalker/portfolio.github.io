@@ -26,3 +26,18 @@ text-decoration: none;
 color: #007bff;
 font-weight: bold;
 }
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color:#000 ;
+    }
+    
+    h1 {
+        color:#fff
+    }
+
+    p{
+        color: #fff;
+    }
+}
