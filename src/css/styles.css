@@ -139,6 +139,7 @@ body {
     flex-direction: column;
     text-align: left;
   }
+
 /*
   #btn-about{
     padding-left: 20px;
@@ -151,7 +152,8 @@ body {
     cursor:pointer;
 
   }
-  */
+*/
+
 .div1 > h1{
     font-size: 2em;
     font-family: 'League Spartan', sans-serif;
@@ -298,7 +300,6 @@ body {
 }
 
 /* SKILLS */
-
 .skills{
     width: 100%;
     height: auto;
@@ -421,7 +422,6 @@ body {
 }
 
 /* SERVICES */
-
 #services-txt{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -510,14 +510,13 @@ body {
     margin-top: 7.5em;
 }
 
-
 /* FOOTER */
-
 footer > p{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75em;
 }
+
 
 /* RESPONSIVE */
 
@@ -645,45 +644,46 @@ footer > p{
         border-color: #000;
     }
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar-links {
         background-color: #000;
     }
 }
-
-.color-icon{
+    .color-icon{
     color: #fff;
 }
 
 /* PULSANTE TOP */
-.content {
-    padding: 0px;
-}
+    .content {
+        padding: 0px;
+    }
 
+/* CV SEZIONE */
+    .cv-button{
+        box-shadow: rgb(255, 255, 255) 0 0 2px 0;
+    }
 
+/* SKILL SEZIONE */
+    .skill-c {
+        box-shadow: rgb(255, 255, 255) 0 0 2px 0;
+    }
 
-.color-icon{
-    color: #fff;
-}
+    .form button {
+        color: white;
+    }
 
-.cv-button{
-    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
-}
+/* CARD SEZIONE */
+    .card{
+        box-shadow: rgb(255, 255, 255) 0 0 2px 0;
+    }
 
-.skill-c {
-    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
-}
+/* GET STARTED BUTTON */
+    .get-started-button{
+        box-shadow: rgb(255, 255, 255) 0 0 2px 0;
+    }
 
-.form button {
-    color: white;
-}
-
-.card{
-    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
-}
-
-.popup{
-    box-shadow: rgb(255, 255, 255) 0 0 4px 2px, rgba(255, 255, 255) 0 0 4px 2px;
-}
-
+/* POPUP SEZIONE */
+    .popup{
+        box-shadow: rgb(255, 255, 255) 0 0 2px 0;
+    }
 }
